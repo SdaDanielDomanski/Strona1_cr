@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Moja strona</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+            /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Wykorzystanie CSS Layout Float</h2>
+
+    <p>W tym przykładzie utworzymy nagłówek, dwie kolumny i stopkę</p>
+
+    <header>
+        <h2>Programista</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="https://www.w3schools.com/html/">HTML</a></li>
+                <li><a href="https://www.w3schools.com/css">CSS</a></li>
+                <li><a href="https://www.w3schools.com/js">JavaScript</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>HTML</h1>
+            <p>HTML (ang. HyperText Markup Language) – hipertekstowy język znaczników, wykorzystywany do tworzenia
+                dokumentów hipertekstowych.</p>
+            <p>HTML pozwala opisać strukturę informacji zawartych wewnątrz strony internetowej, nadając odpowiednie
+                znaczenie semantyczne poszczególnym fragmentom tekstu – formując hiperłącza, akapity, nagłówki, listy –
+                oraz osadza w tekście dokumentu obiekty plikowe np. multimedia bądź elementy baz danych np. interaktywne
+                formularze danych.
+
+                HTML umożliwia określenie wyglądu dokumentu w przeglądarce internetowej. Do szczegółowego opisu
+                formatowania akapitów, nagłówków, użytych czcionek i kolorów, zalecane jest wykorzystywanie kaskadowych
+                arkuszy stylów.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>Stopka strony - Daniel Domański</p>
+    </footer>
+</body>
